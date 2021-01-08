@@ -1,0 +1,1 @@
+console.log("{{hello}},{{today}} is a good day");
