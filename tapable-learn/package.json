@@ -1,0 +1,19 @@
+{
+  "name": "tapable-learn",
+  "version": "1.0.0",
+  "description": "tapable专注于自定义事件的触发和处理； webpack 通过 tapable 将实现与流程解耦，所有具体实现通过插件的形式存在；",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tapable": "^2.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
