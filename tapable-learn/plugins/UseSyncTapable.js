@@ -2,14 +2,14 @@
  * @author jiaowang
  * @version 1.0.0
  * @since 2020/09
+ * 同步钩子
  */
 const hook01=require('./hook01');
 const hook02=require('./hook02');
 const hook03=require('./hook03');
 const hook04=require('./hook04');
-const hook05=require('./hook05');
 const pluginName='HelloWorldPlugin';
-class HelloWorldPlugin{
+class UseSyncTapable{
     constructor(options) {
     }
     apply(compiler){
@@ -19,10 +19,6 @@ class HelloWorldPlugin{
         hook03.call('SyncWaterfallHook',23);
         // hook04.call();
         hook04.call('SyncLoopHook');
-        // hook05.callAsync('AsyncSeriesHook', () => {
-        //     console.log('done');
-        //     console.timeEnd('cost');
-        // });
 
             compiler.hooks.emit.tapAsync(
             pluginName,
@@ -37,4 +33,4 @@ class HelloWorldPlugin{
     }
 }
 
-module.exports=HelloWorldPlugin;
+module.exports=UseSyncTapable;

@@ -1,5 +1,6 @@
 const path=require("path");
-const HelloWorldPlugin=require('./plugins/HelloWorldPlugin');
+const UseSyncTapable=require('./plugins/UseSyncTapable');
+// const UseAsyncTapable=require('./plugins/UseAsyncTapable');
 
 module.exports={
     entry:'./src/index.js',
@@ -8,7 +9,7 @@ module.exports={
         filename:'[name].js'
     },
     plugins:[
-new HelloWorldPlugin('test')
+new UseSyncTapable('test')
     ]
 
 }

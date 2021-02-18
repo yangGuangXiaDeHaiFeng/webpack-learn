@@ -25,16 +25,16 @@ SyncLoopHook：遇到返回值为undefined的回掉时，执行依次，遇到�
 
 
 ###异步钩子
-AsyncSeriesHook
-异步串行
-AsyncSeriesBailHook
-异步串行熔断
-AsyncSeriesWaterfallHook
-异步串行值传递【瀑布】
-AsyncParallelHook
-异步并行
-AsyncParallelBailHook
-异步并行熔断
+异步串行:AsyncSeriesHook
+
+异步串行熔断:AsyncSeriesBailHook
+
+异步串行值传递【瀑布】:AsyncSeriesWaterfallHook
+
+异步并行:AsyncParallelHook
+
+异步并行熔断:AsyncParallelBailHook
+
 ## 调用方式
 call()
 
